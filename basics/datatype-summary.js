@@ -23,3 +23,28 @@ const myFunction = function(){
 }
 
 // Javascript is dynamic language
+
+// **************************************************************************
+
+// Types of memory
+// Stack (Primitive), Heap (Non-primitive)
+
+let myName = "Shubham"
+let anotherName = myName
+anotherName = "Shubh"
+
+// console.log(myName);
+// console.log(anotherName);
+
+let user1 = {
+    email: "shubham@gmail.com",
+    upi: "user@sbi",
+}
+
+let user2 = user1
+
+user2.email = "user@gmail.com"
+
+// same reference value for both the value in heap
+console.log(user1.email); // user@gmail.com
+console.log(user2.email); // user@gmail.com
