@@ -6,19 +6,46 @@
     <title>Dom learning</title>
 </head>
 <body style="background: #000; color: #fff;">
-    <div class="parent">
+    <!-- <div class="parent">
         <div class="day">Mon</div>
         <div class="day">Tues</div>
         <div class="day">Wed</div>
         <div class="day">Thru</div>
-    </div>
+    </div> -->
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
 </body>
 
 <script>
-    let parents = document.querySelector('.parent')
-    for (let i = 0; i < parents.children.length; i++) {
-        console.log(parents.children[i].innerHTML);
+    // let parents = document.querySelector('.parent')
+    // for (let i = 0; i < parents.children.length; i++) {
+    //     console.log(parents.children[i].innerHTML);
         
+    // }
+    // function addLanguage(langName){
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li)
+    // }
+
+    function addLanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
     }
+    addLanguage()
+    addLanguage()
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+
 </script>
 </html>
