@@ -24,6 +24,6 @@ const pav = () => {
 
 // const addtwo = (n1, n2) => n1 + n2    // implicit return, then there is no need for return statement
 // const addtwo = (n1, n2) => ( n1 + n2 )    // same for paranthesis
-const addtwo = (n1, n2) => ({username: "Shubham"}) // to define a object it must be wrap within paranthesis
+const addtwo = (n1, n2) => ({username: "Shubham"}) // to define a object it must be wrap within paranthesis, return should be return
 
 console.log(addtwo(3 ,4));

@@ -54,5 +54,5 @@ const array1 = ['a', 'b', 'c'];
 const object = { a: 1, b: 2, c: 3 };
 
 for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
+//   console.log(`${property}: ${object[property]}`);
 }
